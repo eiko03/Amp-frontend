@@ -1,0 +1,84 @@
+type User
+@model
+@auth(
+  rules: [
+    { allow: owner, ownerField:"id", operations: [create, update, delete] }
+    { allow: private, operations: [read] }
+    { allow: public, operations: [read] }
+  ]
+  )
+{
+  id: ID!
+  email: String!
+  name: String
+  profilePhoto: String
+  biography: String
+  isCreator: Boolean
+  createdAt: String!
+  creator_id: String
+  posts: [Post] @connection(name: "UserPosts", keyField: "authorId")
+  custompages: [CustomPage] @connection(name: "UserCustomPage", keyField: "authorId")
+  comments: [Comment] @connection(name: "UserComments", keyField: "authorId")
+}
+
+type Post
+@model
+@auth(
+  rules: [
+    { allow: owner, ownerField:"authorId", operations: [create, update, delete] }
+    { allow: private, operations: [read, update] }
+    { allow: public, operations: [read] }
+  ]
+  ){
+  id: ID!
+  title: String!
+  body: String!
+  likes: [String]
+  file: String
+  fileName: String
+  fileType: String
+  createdAt: String!
+  authorId: String!
+  author: User! @connection(name: "UserPosts", keyField: "authorId")
+  comments: [Comment] @connection(name: "PostComments", keyField: "postId")
+}
+
+type CustomPage
+@model
+@auth(
+  rules: [
+  { allow: owner, ownerField:"authorId", operations: [create, update, delete] }
+  { allow: private, operations: [read, update] }
+  { allow: public, operations: [read] }
+  ]
+  ){
+    id: ID!
+    header: String
+    profile: String
+    headingText: String
+    subheadingText: String
+    joinBtnColor: String
+    whyJoinBg: String
+    authorId: String!
+    author: User! @connection(name: "UserCustomPage", keyField: "authorId")
+  }
+
+  type Comment
+  @model
+  @auth(
+    rules: [
+    { allow: owner, ownerField:"authorId", operations: [create, update, delete] }
+    { allow: private, operations: [read] }
+    { allow: public, operations: [read] }
+    ]
+    ){
+      id: ID!
+      body: String!
+      likes: [String]
+      createdAt: String!
+      authorId: String!
+      postId: String!
+      name: String!
+      post: Post! @connection(name: "PostComments", keyField: "postId")
+      author: User! @connection(name: "UserComments", keyField: "authorId")
+    }

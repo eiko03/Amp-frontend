@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cloutfrontend-dev-165013-authRole",
+      "UnauthRoleArn": "arn:aws:iam::581774521678:role/amplify-cloutfrontend-dev-165013-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::581774521678:role/amplify-cloutfrontend-dev-165013-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-cloutfrontend-dev-165013-deployment",
+      "UnauthRoleName": "amplify-cloutfrontend-dev-165013-unauthRole",
+      "StackName": "amplify-cloutfrontend-dev-165013",
+      "StackId": "arn:aws:cloudformation:us-east-2:581774521678:stack/amplify-cloutfrontend-dev-165013/c8e5f9f0-fc45-11eb-ac0e-0a701ad7d2c8",
+      "AmplifyAppId": "d2ep34cj1crwku"
+    },
+    "categories": {
+      "auth": {
+        "cloutfrontend": {}
+      }
+    }
+  }
+}

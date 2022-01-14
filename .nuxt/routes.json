@@ -1,0 +1,58 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "C:\\\\Users\\\\bmcla\\\\Documents\\\\Clout\\\\Shopify App\\\\streaming\\\\frontend\\\\pages\\\\login.vue",
+    "chunkName": "pages/login",
+    "_name": "_5af21d69"
+  },
+  {
+    "name": "newlogin",
+    "path": "/newlogin",
+    "component": "C:\\\\Users\\\\bmcla\\\\Documents\\\\Clout\\\\Shopify App\\\\streaming\\\\frontend\\\\pages\\\\newlogin.vue",
+    "chunkName": "pages/newlogin",
+    "_name": "_64fea20e"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\bmcla\\\\Documents\\\\Clout\\\\Shopify App\\\\streaming\\\\frontend\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_337d96d3"
+  },
+  {
+    "name": "settings",
+    "path": "/settings",
+    "component": "C:\\\\Users\\\\bmcla\\\\Documents\\\\Clout\\\\Shopify App\\\\streaming\\\\frontend\\\\pages\\\\settings.vue",
+    "chunkName": "pages/settings",
+    "_name": "_8dbd375a"
+  },
+  {
+    "name": "subscribe",
+    "path": "/subscribe",
+    "component": "C:\\\\Users\\\\bmcla\\\\Documents\\\\Clout\\\\Shopify App\\\\streaming\\\\frontend\\\\pages\\\\subscribe.vue",
+    "chunkName": "pages/subscribe",
+    "_name": "_213c026c"
+  },
+  {
+    "name": "test",
+    "path": "/test",
+    "component": "C:\\\\Users\\\\bmcla\\\\Documents\\\\Clout\\\\Shopify App\\\\streaming\\\\frontend\\\\pages\\\\test.vue",
+    "chunkName": "pages/test",
+    "_name": "_4acf2d7c"
+  },
+  {
+    "name": "player-name",
+    "path": "/player/:name?",
+    "component": "C:\\\\Users\\\\bmcla\\\\Documents\\\\Clout\\\\Shopify App\\\\streaming\\\\frontend\\\\pages\\\\player\\\\_name.vue",
+    "chunkName": "pages/player/_name",
+    "_name": "_1c7873e9"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\bmcla\\\\Documents\\\\Clout\\\\Shopify App\\\\streaming\\\\frontend\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_dd6b0b5c"
+  }
+]

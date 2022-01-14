@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Poppins-Light";
+    src: local("Poppins-Light"),
+     url(~assets/poppins/Poppins-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: local("Poppins-Medium"),
+     url(~assets/poppins/Poppins-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: local("Poppins-Regular"),
+     url(~assets/poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+html, body {
+  text-decoration: none!important;
+  margin: 0;
+  padding: 0;
+}
+
+/* LOGIN STUFF */
+
+
+#main-container {
+  width: 100%;
+  /* font-family: "Poppins-Regular"; */
+}
+
+.left-container {
+  /* float: left; */
+  width: 100%;
+  height: 100vh;
+
+  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .right-container {
+  float: right;
+  width: 50%;
+  height: 100vh;
+  display: inline;
+  background-color: #121212;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-container img {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: rgb(255 255 255 / 25%) 0px 0px 50px;
+  transition: .2s ease-out;
+}
+
+.right-container img:hover {
+  width: 82%;
+} */
+
+/* Login form stuff */
+
+.login-form {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+}
+
+.login-form h1 {
+  font-family: "Poppins-Regular";
+  margin-bottom: 2em;
+}
+
+.above-input {
+  text-align: left;
+  margin-bottom: 0;
+  font-family: "Poppins-Light";
+  font-size: 12px;
+  color: gray;
+}
+
+.login-form button {
+  display: block;
+  margin: auto;
+  width: 100%;
+  font-family: "Poppins-Light";
+  font-size: 17px;
+  margin-top: 2em;
+  text-align: center;
+  padding: 10px 10px;
+  color: white;
+  background-color: black;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  margin-top: 0;
+  font-size: 18px;
+  padding: 15px 0 15px 0;
+  border-bottom: 1.8px solid lightgray!important;
+  border: 0;
+  outline: none;
+  transition: .3s ease-out;
+}
+
+.login-form input:focus {
+  border-bottom: 1.8px solid #121212!important;
+}
+
+.register-text {
+  font-family: "Poppins-Light";
+  font-size: 12px;
+  margin-top: 4em;
+}
+
+.register-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #121212;
+}
+
+/* NOT AUTHED MESSAGE */
+
+.unauth-container {
+  /* float: left; */
+  width: 100%;
+  height: 100vh;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.unauth1 {
+  font-family: "Poppins-Regular";
+  margin-bottom: 0;
+  display: block;
+
+}
+
+.unauth2 {
+font-family: "Poppins-Light";
+display: block;
+margin-top: 0;
+}
+
+.buttons {
+  /* display: flex; */
+  display: inline-flex;
+  gap: 12px;
+}
+
+.button--green {
+  /* border: 1px solid green; */
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white!important;
+  font-family: "Poppins-Regular";
+  text-decoration: none;
+  background-color: green;
+}
+
+.button--orange {
+  /* border: 1px solid #F6803C; */
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: white!important;
+  font-family: "Poppins-Regular";
+  text-decoration: none;
+  background-color: #F6803C;
+}
+
+*{box-sizing:border-box;}
+.lreg-input {
+  padding: 10px 20px;
+  border: 1.5px solid lightgray;
+  border-radius: 15px;
+  width: 100%;
+  transition: .15s ease-out;
+}
+
+.lreg-input:hover {
+  border: 1.5px solid rgb(147, 197, 253)!important;
+}
+
+.lreg-input:focus {
+  border: 1.5px solid rgb(147, 197, 253)!important;
+  outline: 3.5px solid rgba(147, 197, 253, .5)!important;
+}
+
+.button-submit {
+  padding: 10px 20px;
+  background-color: #4285F4;
+  color: white!important;
+  border-radius: 15px;
+  width: 100%;
+  transition: .15s ease-out;
+}
+
+.button-submit:hover {
+  background-color: rgba(66,133,244, 0.9);
+}
+
+.button-submit:focus {
+  outline: 4px solid rgba(147, 197, 253, .5)!important;
+}
+
+.button--outline {
+  transition: .15s ease-out;
+}
+
+.button--outline:hover {
+  background-color: rgba(66,133,244, 0.9);
+}
+
+.button--outline:focus {
+  outline: 4px solid rgba(147, 197, 253, .5)!important;
+}
+
+.button-normal {
+  background-color: #4285F4;
+  color: white!important;
+  border-radius: 15px;
+  transition: .15s ease-out;
+}
